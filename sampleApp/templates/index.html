@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+	<head>
+	<title>Sample Form</title>
+	</head>
+	<body>
+		Sample Form
+		<form method='POST' enctype="multipart/form-data" autocomplete="off">
+			<input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+			{{ sampleForm.as_p }}
+			<input type='submit' value='Save' />
+		</form>
+	</body>
+</html>
